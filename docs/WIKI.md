@@ -39,7 +39,7 @@ void loop() { bot.update(); }
 - **Отправка:** `send(чат, "текст")` и `sendButtons(чат, "Что делать?", "Вкл:led_on|Выкл:led_off;Статус:status")` (кнопки в ряд через `|`, ряды через `;`), `answerCallback()` убирает «часики» с нажатой кнопки.
 - **Безопасность:** `allowChat(ваш_chat_id)` пропускает команды только из ваших чатов; из чужих игнорируются (но Telegram об этом уведомляется, чтобы не присылать их снова).
 - **Правильные числа:** chat_id групп вроде -1001234567890 и новых аккаунтов больше 2 миллиардов; `long` на ESP их обрезает, поэтому внутри 64 бита и `idToString()`.
-- **Русский и эмодзи:** разбор `\\u043f` и пар суррогатов, исходящий текст без порчи; длина запроса считается в байтах UTF-8.
+- **Русский и эмодзи:** разбор `\u043f` и пар суррогатов, исходящий текст без порчи; длина запроса считается в байтах UTF-8.
 - **Понятные ошибки:** неверный токен, бот заблокирован, лимит запросов (библиотека сама ждёт), нет связи (Telegram заблокирован сетью); `diagnose()` проверяет токен через `getMe()`.
 - **Без лишних библиотек:** только `WiFiClientSecure`; свой разбор JSON ровно под ответы Telegram.
 - Для **ESP32 и ESP8266** (и любых плат с `Client`).
@@ -189,7 +189,7 @@ void loop() { bot.update(); }
 - **Sending:** `send(chat, "text")` and `sendButtons(chat, "What to do?", "On:led_on|Off:led_off;Status:status")` (buttons in a row with `|`, rows with `;`), `answerCallback()` removes the spinner from a pressed button.
 - **Security:** `allowChat(your_chat_id)` lets commands through only from your chats; others are ignored (while Telegram is still told they were received so they are not sent again).
 - **Correct numbers:** group chat ids like -1001234567890 and ids of newer accounts exceed 2 billion; `long` on ESP truncates them, so the library uses 64 bits and `idToString()`.
-- **Cyrillic and emoji:** parses `\\u043f` and surrogate pairs, outgoing text is not corrupted; the request length is counted in UTF-8 bytes.
+- **Cyrillic and emoji:** parses `\u043f` and surrogate pairs, outgoing text is not corrupted; the request length is counted in UTF-8 bytes.
 - **Clear errors:** wrong token, bot blocked, rate limit (the library waits by itself), no connection (Telegram blocked by the network); `diagnose()` checks the token via `getMe()`.
 - **No extra libraries:** only `WiFiClientSecure`; its own JSON parsing exactly for Telegram replies.
 - For **ESP32 and ESP8266** (and any board with a `Client`).
