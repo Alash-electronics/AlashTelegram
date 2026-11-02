@@ -1,5 +1,9 @@
-// AlashTelegram: кнопки в чате. Команда /menu показывает сообщение с кнопками «Включить» и «Выключить»; нажатия приходят в тот же обработчик
-// (m.isCallback, данные в m.data). answerCallback() убирает «часики» с нажатой кнопки и может показать короткое уведомление.
+// [ru] AlashTelegram: кнопки в чате. Команда /menu показывает сообщение с кнопками «Включить» и «Выключить»; нажатия приходят в тот же обработчик
+//      (m.isCallback, данные в m.data). answerCallback() убирает «часики» с нажатой кнопки и может показать короткое уведомление.
+// [kk] AlashTelegram: чаттағы батырмалар. /menu командасы «Қосу» және «Өшіру» батырмалары бар хабарлама көрсетеді; басулар сол өңдеушіге келеді
+//      (m.isCallback, деректер m.data-да). answerCallback() басылған батырмадан «сағатты» алады және қысқа хабарландыру көрсете алады.
+// [en] AlashTelegram: buttons in the chat. The /menu command shows a message with the buttons "On" and "Off"; the presses arrive in the same handler
+//      (m.isCallback, the data in m.data). answerCallback() removes the "clock" from the pressed button and can show a short notification.
 #include <AlashTelegram.h>
 #if defined(ESP32)
 #include <WiFi.h>

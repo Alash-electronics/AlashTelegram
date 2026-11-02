@@ -1,5 +1,9 @@
-// AlashTelegram: управление светодиодом (или реле) командами /on, /off, /status. Команды принимаются ТОЛЬКО из вашего чата:
-// узнайте chat_id в примере Basic_ESP и впишите в MY_CHAT. Без этого любой, кто найдёт бота, сможет включать вашу лампу.
+// [ru] AlashTelegram: управление светодиодом (или реле) командами /on, /off, /status. Команды принимаются ТОЛЬКО из вашего чата:
+//      узнайте chat_id в примере Basic_ESP и впишите в MY_CHAT. Без этого любой, кто найдёт бота, сможет включать вашу лампу.
+// [kk] AlashTelegram: жарықдиодты (немесе релені) /on, /off, /status командаларымен басқару. Командалар ТЕК сіздің чатыңыздан қабылданады:
+//      chat_id-ді Basic_ESP мысалынан біліп, MY_CHAT-қа жазыңыз. Онсыз ботты тапқан кез келген адам шамыңызды қоса алады.
+// [en] AlashTelegram: controlling an LED (or a relay) with the commands /on, /off, /status. Commands are accepted ONLY from your chat:
+//      find the chat_id in the Basic_ESP example and put it into MY_CHAT. Without this anyone who finds the bot can switch your lamp on.
 #include <AlashTelegram.h>
 #if defined(ESP32)
 #include <WiFi.h>

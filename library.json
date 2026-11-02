@@ -1,6 +1,6 @@
 {
   "name": "AlashTelegram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy Telegram bot for ESP32/ESP8266: commands, messages, inline buttons, allowed chats, 64-bit ids, clear tips (ru/kk/en), no ArduinoJson",
   "keywords": "Telegram, bot, ESP32, ESP8266, IoT, remote control, notifications, inline buttons",
   "repository": {

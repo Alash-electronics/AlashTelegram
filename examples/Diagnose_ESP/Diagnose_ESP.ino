@@ -1,5 +1,9 @@
-// AlashTelegram: бот не отвечает? Скетч проверит токен (спросит Telegram, как зовут бота) и подскажет, что не так
-// (токен, Wi-Fi, блокировка Telegram в сети).
+// [ru] AlashTelegram: бот не отвечает? Скетч проверит токен (спросит Telegram, как зовут бота) и подскажет, что не так
+//      (токен, Wi-Fi, блокировка Telegram в сети).
+// [kk] AlashTelegram: бот жауап бермей ме? Скетч токенді тексереді (Telegram-нан боттың атын сұрайды) және не болғанын айтады
+//      (токен, Wi-Fi, желіде Telegram бұғатталған).
+// [en] AlashTelegram: the bot does not answer? The sketch checks the token (asks Telegram what the bot is called) and tells what is wrong
+//      (the token, Wi-Fi, Telegram blocked on the network).
 #include <AlashTelegram.h>
 #if defined(ESP32)
 #include <WiFi.h>

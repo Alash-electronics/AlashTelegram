@@ -1,7 +1,15 @@
-// AlashTelegram: самый простой пример. Бот отвечает на любое сообщение тем же текстом и называет ваш chat_id.
+// [ru] AlashTelegram: самый простой пример. Бот отвечает на любое сообщение тем же текстом и называет ваш chat_id.
 //
-// Как получить бота: в Telegram откройте @BotFather, команда /newbot, придумайте имя; он пришлёт токен вида 123456789:AAH...
-// Впишите токен и данные Wi-Fi, загрузите скетч, напишите боту. Wi-Fi только 2.4 ГГц.
+//      Как получить бота: в Telegram откройте @BotFather, команда /newbot, придумайте имя; он пришлёт токен вида 123456789:AAH...
+//      Впишите токен и данные Wi-Fi, загрузите скетч, напишите боту. Wi-Fi только 2.4 ГГц.
+// [kk] AlashTelegram: ең қарапайым мысал. Бот кез келген хабарламаға сол мәтінмен жауап береді және сіздің chat_id-ңызды атайды.
+//
+//      Ботты қалай алу: Telegram-да @BotFather ашыңыз, /newbot командасы, ат ойлап табыңыз; ол 123456789:AAH... түріндегі токен жібереді.
+//      Токен мен Wi-Fi деректерін жазып, скетчті жүктеңіз, ботқа жазыңыз. Тек 2.4 ГГц Wi-Fi.
+// [en] AlashTelegram: the simplest example. The bot answers any message with the same text and tells your chat_id.
+//
+//      How to get a bot: in Telegram open @BotFather, the /newbot command, invent a name; it sends a token like 123456789:AAH...
+//      Put in the token and the Wi-Fi details, upload the sketch, write to the bot. 2.4 GHz Wi-Fi only.
 #include <AlashTelegram.h>
 #if defined(ESP32)
 #include <WiFi.h>
